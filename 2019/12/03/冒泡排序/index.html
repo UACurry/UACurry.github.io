@@ -4,9 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, UACurry">
-    <meta name="description" content="欢迎来到我的博客，这也是我博客的开始，接下来我也会在空余的时间来打造自己的博客！！
-">
+    <meta name="keywords" content="冒泡排序, UACurry">
+    <meta name="description" content="冒泡排序冒泡排序（Bubble Sort），是一种计算机科学领域的较简单的排序算法。
+它重复地走访过要排序的元素列，依次比较两个相邻的元素，如果顺序（如从大到小、首字母从从Z到A）错误就把他们交换过来。走访元素的工作是重复地进行直到没有相邻">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Hello World | UACurry</title>
+    <title>冒泡排序 | UACurry</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -304,13 +304,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Hello World
+                        冒泡排序
                     </div>
                 </div>
             </div>
@@ -434,7 +434,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2019-11-16
+                    2019-12-03
                 </div>
                 
 
@@ -443,7 +443,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    37
+                    329
                 </div>
                 
 
@@ -466,7 +466,22 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>欢迎来到我的博客，这也是我博客的开始，接下来我也会在空余的时间来打造自己的博客！！</p>
+                <h1 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h1><p>冒泡排序（Bubble Sort），是一种<a href="https://baike.baidu.com/item/计算机科学" target="_blank" rel="noopener">计算机科学</a>领域的较简单的<a href="https://baike.baidu.com/item/排序算法/5399605" target="_blank" rel="noopener">排序算法</a>。</p>
+<p>它重复地走访过要排序的元素列，依次比较两个相邻的元素，如果顺序（如从大到小、首字母从从Z到A）错误就把他们交换过来。走访元素的工作是重复地进行直到没有相邻元素需要交换，也就是说该元素列已经排序完成。</p>
+<p>下面我将展示一种非常好的用C语言描述的冒泡排序的代码</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> </span><br><span class="line">swap(<span class="keyword">int</span> arr[], <span class="keyword">int</span> i, <span class="keyword">int</span> j) &#123;   </span><br><span class="line">    <span class="keyword">int</span> temp = arr[i];   </span><br><span class="line">    arr[i] = arr[j];   </span><br><span class="line">    arr[j] = temp; </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">move_max_rightmost</span><span class="params">(<span class="keyword">int</span> arr[], <span class="keyword">int</span> n)</span> </span>&#123;   </span><br><span class="line">    <span class="keyword">bool</span> arr_changed = <span class="literal">false</span>;   </span><br><span class="line">    <span class="keyword">int</span> j;      </span><br><span class="line">    <span class="keyword">for</span> (j = <span class="number">0</span>; j &lt; n - <span class="number">1</span>; j++)    </span><br><span class="line">        <span class="keyword">if</span> (arr[j] &gt; arr[j + <span class="number">1</span>]) &#123;             </span><br><span class="line">            </span><br><span class="line">            </span><br><span class="line">            swap(arr, j, j+<span class="number">1</span>);   </span><br><span class="line">            arr_changed = <span class="literal">true</span>;      </span><br><span class="line">        &#125; </span><br><span class="line">    <span class="keyword">return</span> arr_changed; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="D:%5C%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87%7B616A92F0-67FF-47F3-B736-53A9EA1E7660%7D.png.jpg" alt="{616A92F0-67FF-47F3-B736-53A9EA1E7660}.png"></p>
+<p><img src="D:%5C%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87%7B3AC15366-7789-40E2-B4DD-A077AF820AB4%7D.png.jpg" alt="{3AC15366-7789-40E2-B4DD-A077AF820AB4}.png"></p>
+<p><img src="D:%5C%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87%7B0F547241-A889-4832-A391-CB75EC42D1C7%7D.png.jpg" alt="{0F547241-A889-4832-A391-CB75EC42D1C7}.png"></p>
+<p><img src="D:%5C%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87%7BFB9E9A32-D1F8-47B6-B52D-892F3F00939A%7D.png.jpg" alt="{FB9E9A32-D1F8-47B6-B52D-892F3F00939A}.png">)<img src="D:%5C%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87%7B16B40472-3BC4-4191-AAD0-FBBB3B6A3F50%7D.png.jpg" alt="{16B40472-3BC4-4191-AAD0-FBBB3B6A3F50}.png"></p>
+<p><img src="D:%5C%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87%7BFB9E9A32-D1F8-47B6-B52D-892F3F00939A%7D.png.jpg" alt="{FB9E9A32-D1F8-47B6-B52D-892F3F00939A}.png"></p>
+<p><img src="D:%5C%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87%7B86D9F87D-3013-4268-ACB6-C9AC7AA0AF9A%7D.png.jpg" alt="{86D9F87D-3013-4268-ACB6-C9AC7AA0AF9A}.png"></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">bubble_sort</span><span class="params">(<span class="keyword">int</span> arr[], <span class="keyword">int</span> n)</span> </span>&#123;   </span><br><span class="line">	<span class="keyword">int</span> i;  </span><br><span class="line">	</span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; n; i++) &#123; </span><br><span class="line">    	<span class="keyword">bool</span> array_remain_unchanged =                    												!move_max_rightmost(arr, n-i); </span><br><span class="line">        <span class="keyword">if</span> (array_remain_unchanged) <span class="keyword">return</span>;  </span><br><span class="line">     &#125; </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> *argv[])</span> </span>&#123; </span><br><span class="line">	<span class="keyword">const</span> <span class="keyword">unsigned</span> <span class="keyword">int</span> array_size = <span class="number">10</span>;   </span><br><span class="line">	<span class="keyword">int</span> arr[array_size];  </span><br><span class="line">    <span class="keyword">int</span> i;  </span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; array_size; i++)  </span><br><span class="line">    	arr[i] = array_size - i - <span class="number">1</span>;  </span><br><span class="line">    bubble_sort(arr, array_size); </span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; array_size; i++)    </span><br><span class="line">    	<span class="built_in">putchar</span>(<span class="string">'0'</span>+arr[i]);   <span class="keyword">return</span> <span class="number">0</span>; &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>这是我在学习C语言中，接触过的最优秀的<strong><em>冒泡排序</em></strong>，程序极为的严谨，当然同学们可以在以后的学习中直接调用<strong><em>sort</em></strong>函数</p>
 
             </div>
             <hr/>
@@ -492,7 +507,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2019/11/16/hello-world/">http://yoursite.com/2019/11/16/hello-world/</a>
+                    <a href="http://yoursite.com/2019/12/03/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/">http://yoursite.com/2019/12/03/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -568,9 +583,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2019/12/03/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/">
                     <div class="card-image">
@@ -589,9 +605,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-12-03
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-03
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -600,6 +616,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -607,7 +624,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="far fa-dot-circle"></i>
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2019/11/16/hello-world/">
@@ -638,7 +655,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
